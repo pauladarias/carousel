@@ -29,8 +29,8 @@ function moveToNextSlide() {
 
 function moveToPrevSlide() {
   hideAllSlides();
-  if (slidePosition === totalSlides - 1) {
-    slidePosition = 0;
+  if (slidePosition === 0) {
+    slidePosition = totalSlides - 1;
   } else {
     slidePosition--;
   }
